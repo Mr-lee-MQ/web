@@ -1,0 +1,24 @@
+#数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/web?serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+  #i18n真实配置文件地址
+  messages:
+    basename: i18n.login
+  mvc:
+    format:
+      date: yyyy-MM-dd
+#Mybatis-plus配置
+mybatis-plus:
+  #  configuration:
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted
+#关闭thymeleaf模板引擎缓存
+thymeleaf:
+  cache: false
+
