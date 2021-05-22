@@ -75,7 +75,6 @@ public class EmployeeController {
     public String deletEmp(@PathVariable ("id")String id, Model model){
 
       employeeService.removeById(id);
-
         return "redirect:/emps";
     }
 
